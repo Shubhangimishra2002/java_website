@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document
+        <link rel="stylesheet" href="java_website2.css">
+    </title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Java Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction-to-Java">Introduction to Java.</a></li>
+          <li>
+            <a class="nav-link" href="#What_you_should_already_know"
+              >What you should already know</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#Java_and_JavaScript">Java and JavaScript</a>
+          </li>
+          <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+          <li><a class="nav-link" href="#Variables">Variables</a></li>
+          <li>
+            <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+          </li>
+          <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+          <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
+          <li><a class="nav-link" href="#Data_types">Data types</a></li>
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction </header>
+          <article>
+            <p>
+      Java is a general use and object-oriented programming language. In object-oriented programming, developers create objects that encompass functions and data, which can then be used to provide structure for programs and applications. 
+            </p>
+      
+            <p>
+              Java currently ranks as the third-most sought-after programming language for hiring managers globally (PDF, 2.4 MB) and has held the #5 spot on Stack Overflow’s list of the most commonly used languages for two years.
+            </p>
+          
+              <p>
+                Java’s popularity is for good reason; this language is relatively easy to learn and use, boasts incredible security and can handle massive amounts of data. 
+              </p>
+              <p>
+               These features make Java an ideal language for the online finance sector, and it is often applied in industries such as banking, billing and the stock market. 
+              </p>
+           
+          </article>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+          <header>What you should already know</header>
+          <article>
+            <p>This guide assumes you have the following basic background:</p>
+      
+            <ul>
+              <li>
+                You must know at least the basics of how to use a computer, and should be able to start a command line shell.
+              </li>
+              <li>If you are new to programming then Introduction to Programming is strongly recommended. .</li>
+              <li>
+                If you already know C++ or any other Object-Oriented language, Java should be easy to pick up.
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="JavaScript_and_Java">
+          <header>Java and JavaScript</header>
+          <article>
+            <p>
+              JavaScript and Java are similar in some ways but fundamentally different
+              in some others. The JavaScript language resembles Java but does not have
+              Java's static typing and strong type checking. According to the Java platform official website, the main difference between Java and JavaScript is that Java is an OOP programming language while JavaScript is an OOP programming script. JavaScript code is written completely in text and need only be interpreted. Java, on the other hand, must be compiled.
+            </p>
+      
+            <p>
+              JavaScript is a very free-form language compared to Java. You do not
+              have to declare all variables, classes, and methods. You do not have to
+              be concerned with whether methods are public, private, or protected, and
+              you do not have to implement interfaces. Variables, parameters, and
+              function return types are not explicitly typed.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Hello_world">
+          <header>Hello world</header>
+          <article>
+            To get started with writing Java, open your virtual studio and write your
+            first "Hello world" Java code:
+            <code
+              >import java.io.*;
+        
+      class GFG {
+          public static void main(String[] args)
+          {
+              System.out.println(
+                  "Hello World");
+          }
+      }
+            </code>
+      
+            Select the code in the pad and hit run to watch it unfold in your
+            browser!
+          </article>
+        </section>
+        <section class="main-section" id="Variables">
+          <header>Variables</header>
+          <p>
+            A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.
+      
+      Variable is a name of memory location. There are three types of variables in java: local, instance and static.
+      
+      There are two types of data types in Java: primitive and non-primitive.
+          </p>
+          <p>
+            A variable is the name of a reserved area allocated in memory. In other words, it is a name of the memory location. It is a combination of "vary + able" which means its value can be changed.
+          </p>
+          <ul>
+          There are three types of variable in Java.
+            <li>
+              Local Variable:
+      A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.
+      
+      A local variable cannot be defined with "static" keyword.
+              </li>
+          <li>
+             Instance Variable:
+      A variable declared inside the class but outside the body of the method, is called an instance variable. It is not declared as static.
+      
+      It is called an instance variable because its value is instance-specific and is not shared among instances.
+            </li>
+            <li>
+              Static variable:
+      A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class. Memory allocation for static variables happens only once when the class is loaded in the memory. 
+              </li>
+          </ul>
+          
+        </section>
+        <section class="main-section" id="Declaring_variables">
+          <header>Declaring variables</header>
+          <article>
+            <p>
+              Computers store all values using bits (binary digits). A bit can represent two values and we usually say that the value of a bit is either 0 or 1.
+            </p>
+            <p>
+              To create a variable, you must tell Java its type and name. Creating a variable is also called declaring a variable. When you create a primitive variable Java will set aside enough bits in memory for that primitive type and associate that memory location with the name that you used. You have to tell Java the type of the variable because Java needs to know how many bits to use and how to represent the value. The 3 different primitive types are all represented using binary numbers (numbers that use base 2 with digits 0 and 1), but are represented in different ways.
+           
+            </p>
+            <p>
+              When you declare a variable, a memory location (sequential number of bits) is set aside for a variable of that type and the name is associated with that location. An integer gets 32 bits of space, a double gets 64 bits of space and a boolean could be represented by just one bit, but the amount of space isn’t specified by the Java standard.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Variable_scope">
+          <header>Variable scope</header>
+          <article>
+            <p>
+              In programming, a variable can be declared and defined inside a class, method, or block. It defines the scope of the variable i.e. the visibility or accessibility of a variable. Variable declared inside a block or method are not visible to outside. If we try to do so, we will get a compilation error. Note that the scope of a variable can be nested.
+            </p>
+      
+            <p>
+              JavaScript before ECMAScript 2015 does not have block statement scope;
+              rather, a variable declared within a block is local to the function (or
+              global scope) that the block resides within. For example the following
+              code will log 5, because the scope of x is the function (or global
+              context) within which x is declared, not the block, which in this case
+              is an if statement.
+            </p>
+           <ul>
+           <li> We can declare variables anywhere in the program but it has limited scope.</li>
+      <li>A variable can be a parameter of a method or constructor.</li>
+      </li>A variable can be defined and declared inside the body of a method and constructor.</li>
+      <li>It can also be defined inside blocks and loops.</li>
+      <li>Variable declared inside main() function cannot be accessed outside the main() function</li>
+             </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Global_variables">
+          <header>Global variables</header>
+          <article>
+            <p>
+              There are no global variables in Java, but there are global classes with public fields. You can use static import feature of java 5 to make it look almost like global variables.
+            </p>
+          </article>
+        </section>
+      
+      <section class="main-section" id="Data_types">
+          <header>Data types</header>
+          <article>
+            <p>Data types specify the different sizes and values that can be stored in the variable.</p>
+            <ul>
+              <li>
+                <p>There are two types of data types:</p>
+                <ul>
+                  <li>Primitive data types and Non Primitive data types.</li>
+                  <li>
+                   Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+                  </li>
+                  <li>Non-primitive data types: The non-primitive data types include Classes i.e. Interfaces and Arrays</li>
+            </ul>
+           
+          </article>
+        </section>
+        <section class="main-section" id="Reference">
+          <header>Reference</header>
+          <article>
+            <ul>
+              <li>
+                All the documentation in this page is taken from
+                <a
+                  href="https://www.edureka.co/blog/what-is-java/"
+                  target="_blank"
+                >
+              </li>
+            </ul>
+          </article>
+        </section>
+      </main>
+      
+</body>
+</html>
